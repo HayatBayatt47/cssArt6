@@ -1,0 +1,30 @@
+body {
+   width: 400px;
+   height: 300px;
+   display:grid;
+   place-items: center;
+   background-color: #4F77FF;
+   position:relative;
+}
+  div{
+    width: 100px;
+    height: 100px;
+    position:absolute;
+    top:142px;
+    left:191px;
+    translate:-50% -50%;
+    background: #fff;
+  }
+  div:before{
+    display: block;
+    content: "";
+    width:400px;
+    height:400px;
+    background-color: #284ED0;
+    border-radius: 50%; 
+    clip-path: polygon(0% 0%, 100% 0%, 100% 50%, 0% 50%);
+    opacity:0.7;
+    position:absolute;
+    top:50px;
+    right:-150px;
+}
